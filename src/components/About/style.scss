@@ -1,0 +1,6 @@
+@import "src/styles/variables";
+
+@mixin background {
+  background-color: $background-two;
+}
+
