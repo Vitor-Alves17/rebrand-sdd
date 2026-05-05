@@ -1,0 +1,15 @@
+@import "variables";
+
+@mixin highlighted-text{
+  span{
+    color: $primary;
+  }
+  b {
+    color: $primary;
+  }
+}
+
+@mixin view{
+  width: 100vw;
+  height: 100vh;
+}
