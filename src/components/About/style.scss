@@ -5,6 +5,23 @@
   background-color: $background-two;
 }
 
+.img-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+img {
+  width: 292px;
+  height: 390px;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+
+.lower-image{
+  margin-top: 48px;
+}
+
 .about-container {
   @include background;
   @include highlighted-text;

@@ -1,6 +1,8 @@
+import './style.scss'
+
 export const Header = () => {
     return (
-        <header className="Header">
+        <header>
             <span>
                 Suporte de Domingo
             </span>

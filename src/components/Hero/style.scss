@@ -1,0 +1,98 @@
+@import "../../styles/variables";
+@import "../../styles/utils";
+
+@mixin background {
+  background-color: $background-one;
+}
+@mixin button-text{
+  text-align: center;
+  font-family: $font-family-manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+@mixin title-text{
+  font-family: $font-family-sg;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -3.6px;
+}
+
+
+main {
+  @include background;
+  @include highlighted-text;
+  @include view;
+  display: flex;
+  gap: 48px;
+  padding: 128px 32px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 31px;
+  margin-bottom: 24px;
+
+  h1 {
+    @include title-text;
+    color: $letter-title;
+  }
+  span{
+    @include title-text;
+  }
+
+  p {
+    color: $letter-text;
+    font-family: $font-family-manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.5px;
+
+
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  gap: 16px;
+
+
+
+   a{
+     padding: 16px 32px;
+     background-color: $primary-light;
+     border-radius: 16px;
+
+     color: $letter-title;
+     @include button-text;
+   }
+  .highlighted-button{
+    background-color: $primary;
+    color: $neutral-white;
+    @include button-text;
+  }
+}
+
+img {
+  width: 478.66px;
+  height: 478.66px;
+}
+.status{
+  padding: 21px 21px 21px 21px;
+  border-radius: 9999px;
+  background: $neutral-white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.visual-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+

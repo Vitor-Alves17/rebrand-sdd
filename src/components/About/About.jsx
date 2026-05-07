@@ -4,7 +4,7 @@ export const About = () => {
     return (
         <div className='about-container'>
             <div className="img-wrapper">
-                <img src="" alt=""/>
+                <img className="lower-image" src="" alt=""/>
                 <img src="" alt=""/>
             </div>
             <section className="text-container">
