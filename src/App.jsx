@@ -2,6 +2,7 @@ import './styles/global.scss'
 import {About} from './components/About/About.jsx'
 import {Header} from "./components/Header/Header.jsx";
 import {Hero} from "./components/Hero/Hero.jsx";
+import {Footer} from "./components/Footer/Footer.jsx";
 
 export const App = () => {
     return (
@@ -9,6 +10,7 @@ export const App = () => {
             <Header />
             <Hero/>
             <About/>
+            <Footer/>
         </>
     )
 }
